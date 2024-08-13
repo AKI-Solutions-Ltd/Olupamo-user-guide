@@ -1,0 +1,25 @@
+.whatsapp_button {
+    background-color: green;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    position: fixed;
+    right: 50px;
+    bottom:70px;
+    box-shadow: 10px 5px 38px 5px #00000075;
+
+}
+
+.whatsapp_button i{
+    color: #ffffff;
+    font-size: 30px;
+    padding-top: 10px ;
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 720px){
+    .whatsapp_button {
+        bottom: 20px;
+    }
+}
