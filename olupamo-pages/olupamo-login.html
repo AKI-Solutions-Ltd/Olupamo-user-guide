@@ -58,55 +58,46 @@
       color: black;
     }
 
-   .banner {
+    /* .banner {
+			left: 0;
 			display: flex;
-			justify-content: center;
-			align-items: center;
-			/* height: 30vh; */
-			width: 60vw;
-			background-color: white
-		}
+			width: 40em;
+			background-color: yellowgreen;
+		} */
 
 		.banner-text {
 			display: flex;
-			justify-content: center;
 			flex-direction: column;
-			align-items: center;
 			width: auto;
 			height: auto;
+      margin-left: 2em;
+      margin-top: 1em;
 		}
 
 		.banner-text h1 {
 			margin: 0;
 			font-size: 2em;
-			padding-left: 3px;
+      color: #115e14;
 		}
 
-		.custom-olupamo {
-			display: flex;
-			justify-content: center;
-	}
+		.custom-olupamo p strong{
+			color:#115e14;
+			font-size: 1.5em;
 
-		.custom-olupamo h1 {
-			border-bottom: 10px solid #5DC560;
-			border-top: 10px solid #5DC560;
-			border-radius: 5px;
-			border-width: 5px;
-			padding: 0px 10px;
-			/* width: 390px; */
 
-}
+		}
 
-.banner-text p {
-  font-size: 1.2em;
-	line-height: 1.5em;
-}
+		.banner-text p {
+			font-size: 1.2em;
+			line-height: 1.5em;
+		}
+
 
 .release-notes-list li{
 	padding: 0.2em;
 }
 .release-dates{
-  margin-top: -10em;
+  margin-top: -7em;
 }
 .release-dates p{
   font-size: 30px; 
@@ -138,67 +129,35 @@
   color:yellowgreen;
 }
 
-@media only screen and (max-width: 1278px) {
+@media only screen and (min-width: 2560px) {
 
-.banner-text p{
-  font-size: 1.2em;
-  padding-left: 20px;
- 
+.banner-text{
+  margin-left: 7em;
 }
 
 }
+@media only screen and (max-width: 2530px) {
 
-@media only screen and (max-width: 1002px) {
-
-.banner-text p{
-  font-size: 1em;
-  padding-left: 20px;
- 
+.banner-text{
+  margin-left: 4em;
+}
 }
 
+@media only screen and (max-width: 1870px) {
+
+.banner-text{
+  margin-left: 3em;
+}
 }
 
 @media only screen and (max-width: 992px) {
 
-.banner-text p{
-  font-size: 1em;
-  padding-left: 20px;
-}
-
-  .custom-olupamo{
-  width: 33em;
-  display: flex;
-  justify-content: center;
-}
 
 .release-notes-sidebar{
   display: none;
 }
-
-
-
-.release-dates{
-  margin-top: 5px;
-}
-}
-
-@media only screen and (max-width: 846px) {
-
-.banner-text p{
-  font-size: 14px;
-
-  line-height: 1.2em;
- 
-}
-}
-
-@media only screen and (max-width: 768px) {
-
-.release-dates{
-  margin-top: -10px;
 }
  
-}
 
     @media only screen and (max-width: 720px) {
 
@@ -210,12 +169,7 @@
       .popup-h1 {
         font-size: 20px;
       }
-/* 
-      .banner-text p{
-        font-size: 13px;
-        padding-left: -20px;
-      }
-       */
+
     }
 
     @media only screen and (max-width: 700px) {
@@ -368,15 +322,12 @@
         </div>
     </div>
 </div>
-<div class="banner">
-  <!-- <img src="./img/getting started with olupamo .png" alt="Placeholder Image" class="banner-image"> -->
   <div class="banner-text">
       <div class="custom-olupamo">
-          <h1><strong>All about Olupamo </strong></h1>
-      </div><br>
-      <p>Olupamo is Nigeria’s number 1 customizable accounting app for schools.<br> It is a user friendly accounting solution tailored to your specific need with<br> inventory management, vendor/supplier management, online payment <br>integration, fee management embedded into the system.</p>
+          <h1><strong>About Olupamo </strong></h1>
+      </div>
+      <p>Olupamo is Nigeria’s number 1 customizable accounting app for schools. It is a user friendly accounting solution tailored to your specific need with inventory management, vendor/supplier management, online payment integration, fee management embedded into the system.</p>
   </div>
-</div>
 </section>
 
 
@@ -457,7 +408,7 @@
           <div class="improved-container">
               <h3> ✅ Login steps</h3>
               <ul class="release-notes-list" style="line-height: 30px;" >
-                    <li>-Step 1: To access Olupamo, login using the link  <a href="https://olupamo.eschool-ng.com/register" target="_blank">www.olupamo.eschool-ng.com</a></li>
+                    <li>-Step 1: To access Olupamo, login using the link  <a href="https://olupamo.eschool-ng.com/login" target="_blank">www.olupamo.eschool-ng.com</a></li>
                     <li>-Step 2: Select the User Category e.g: log in as an employee.</li>
                     <li>-Step 3: Input your username, and then your password.</li>
                     <li>-Step 4: Then you click on the LOGIN button.</li>

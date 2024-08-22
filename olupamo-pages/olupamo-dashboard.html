@@ -68,42 +68,39 @@
 			background-color: white
 		}
 
-		.banner-text {
+    .banner-text {
 			display: flex;
-			justify-content: center;
 			flex-direction: column;
-			align-items: center;
 			width: auto;
 			height: auto;
+      margin-left: 2em;
+      margin-top: 1em;
 		}
 
 		.banner-text h1 {
 			margin: 0;
 			font-size: 2em;
-			padding-left: 3px;
+      color: #115e14;
 		}
 
-		.custom-olupamo {
-			display: flex;
-			justify-content: center;
-	}
+		.custom-olupamo p strong{
+			color:#115e14;
+			font-size: 1.5em;
 
-		.custom-olupamo h1 {
-			border-bottom: 10px solid #5DC560;
-			border-top: 10px solid #5DC560;
-			border-radius: 5px;
-			border-width: 5px;
-			padding: 0px 10px;
-			/* width: 390px; */
 
-}
+		}
 
-.banner-text p {
-  font-size: 1.2em;
-	line-height: 1.5em;
+		.banner-text p {
+			font-size: 1.2em;
+			line-height: 1.5em;
+		}
+
+
+.release-notes-list li{
+	padding: 0.2em;
 }
 .release-dates{
-  margin-top: -10em;
+  margin-top: -7em;
 }
 .release-dates p{
   font-size: 30px; 
@@ -131,67 +128,39 @@
   padding-right: -10px;
 }
 
-@media only screen and (max-width: 1278px) {
+.improved-container ul a:hover{
+  color:yellowgreen;
+}
 
-.banner-text p{
-  font-size: 1.2em;
-  padding-left: 20px;
- 
+@media only screen and (min-width: 2560px) {
+
+.banner-text{
+  margin-left: 7em;
 }
 
 }
+@media only screen and (max-width: 2530px) {
 
-@media only screen and (max-width: 1002px) {
-
-.banner-text p{
-  font-size: 1em;
-  padding-left: 20px;
- 
+.banner-text{
+  margin-left: 4em;
+}
 }
 
+@media only screen and (max-width: 1870px) {
+
+.banner-text{
+  margin-left: 3em;
+}
 }
 
 @media only screen and (max-width: 992px) {
 
-.banner-text p{
-  font-size: 1em;
-  padding-left: 20px;
-}
-
-  .custom-olupamo{
-  width: 33em;
-  display: flex;
-  justify-content: center;
-}
 
 .release-notes-sidebar{
   display: none;
 }
-
-
-
-.release-dates{
-  margin-top: 5px;
-}
-}
-
-@media only screen and (max-width: 846px) {
-
-.banner-text p{
-  font-size: 14px;
-
-  line-height: 1.2em;
- 
-}
-}
-
-@media only screen and (max-width: 768px) {
-
-.release-dates{
-  margin-top: -10px;
 }
  
-}
 
     @media only screen and (max-width: 720px) {
 
@@ -219,7 +188,8 @@
       }
     }
 
-@media only screen and (max-width: 520px) {
+
+    @media only screen and (max-width: 520px) {
       .text {
         font-size: 15px;
         text-align: center;
@@ -355,14 +325,12 @@
         </div>
     </div>
 </div>
-<div class="banner">
-  <!-- <img src="./img/getting started with olupamo .png" alt="Placeholder Image" class="banner-image"> -->
-  <div class="banner-text">
-      <div class="custom-olupamo">
-          <h1><strong>All about Olupamo </strong></h1>
-      </div><br>
-      <p>Olupamo is Nigeria’s number 1 customizable accounting app for schools.<br> It is a user friendly accounting solution tailored to your specific need with<br> inventory management, vendor/supplier management, online payment <br>integration, fee management embedded into the system.</p>
-  </div>
+</div>
+<div class="banner-text">
+    <div class="custom-olupamo">
+        <h1><strong>About Olupamo </strong></h1>
+    </div>
+    <p>Olupamo is Nigeria’s number 1 customizable accounting app for schools. It is a user friendly accounting solution tailored to your specific need with inventory management, vendor/supplier management, online payment integration, fee management embedded into the system.</p>
 </div>
 </section>
 
@@ -438,14 +406,16 @@
       <div class="release-notes-title">
           <h2> Dashboard</h2>
       </div>
-      <p class="sub-title">How to navigate the dashboard</p>
+      <p class="sub-title">Your school's dashboard is the first thing you see when you login with your username and password. A menu bar is positioned on the left hand side of the platform, this menu bar is what makes Olupamo customizable to suit you (each menu will be discussed further in this guide).</p>
 
       <div class="improved-container">
           <h3> ✅ Details/Icons on your Dashboard, includes these:</h3>
           <ul class="release-notes-list" style="line-height: 30px;" >
-                <li><strong>1.</strong> A pie chart which is a circular graph statistically showing in percentage the various divisions of your school.</li>
-                <li><strong>2.</strong> Profit/Loss boldly written; this shows you the amount of profit gained by your school or the amount of loss enquired by your school. </li>
-                <li><strong>3.</strong> A get started button is placed at the top right which directs you to this user guide for better understanding of the platform.</li>
+                <li><strong>1.</strong> A get started button is placed at the top right which directs you to this user guide for better understanding of the platform.</li>
+                <li><strong>2.</strong> <strong>Profit/Loss</strong> this shows you the amount of profit gained by your school or the amount of loss incurred by your school.  </li>
+                <li><strong>3.</strong> Fee Invoices display the total number of invoices generated to date, including both paid and unpaid invoices.</li>
+                <li><strong>4.</strong> A pie chart which is a circular graph statistically showing the percentage distribution of your school's total stock and inventory units, as well as their values.</li>
+                <li><strong>5.</strong> A cash and bank balance graph sheet.</li>
           </ul>
       </div>
 

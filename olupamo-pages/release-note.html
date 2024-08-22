@@ -8,7 +8,6 @@
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'UA-165827535-1');
   </script>
   <meta charset="utf-8">
@@ -21,11 +20,6 @@
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <style>
-
-    *{
-     margin: 0;
-     padding: 0;
-    }
     .text {
       text-align: center;
     }
@@ -34,166 +28,178 @@
       text-decoration: none;
     }
 
-    .submenu li a {
+    li p a{
       color: black;
-      font-size: large;
-      display: block;
-      height: 100%;
+    }
+
+    .submenu li a{
+      color:black;
+      font-size: 18px;
+    }
+
+    li p a:hover{
+      text-decoration: none;
+      color: black;
+    }
+
+    .release-month ul li a{
+      color:black;
       width: 100%;
+      height: 100%;
+      display: block;
+      padding-left: 1em;
+    }
+    .release-month ul li a:hover{
+      color:green;
+      font-size: 25px;
+    }
+    li a:hover{
+      text-decoration: none;
+      color: black;
     }
 
-    .submenu li a:hover {
-     background-color: #f0f1f0;
-     font-size: 30px;
-     text-decoration: none;
-    }
+   .banner {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			/* height: 30vh; */
+			width: 60vw;
+			background-color: white
+		}
+
+		.banner-text {
+			display: flex;
+			flex-direction: column;
+			width: auto;
+			height: auto;
+      margin-left: 2em;
+      margin-top: 1em;
+		}
+
+		.banner-text h1 {
+			margin: 0;
+			font-size: 2em;
+      color: #115e14;
+		}
+
+		.custom-olupamo p strong{
+			color:#115e14;
+			font-size: 1.5em;
 
 
-    .banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* height: 30vh; */
-    width: 60vw;
-    background-color: white 
-    
-    
+		}
+
+		.banner-text p {
+			font-size: 1.2em;
+			line-height: 1.5em;
+		}
+
+
+.release-notes-list li{
+	padding: 0.2em;
 }
-
-
-
- .banner-text {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: auto;
-    height: auto;
-}
-
-.banner-text h1 {
-    margin: 0;
-    font-size:43px;
-    padding-left: 3px;
-}
-.custom-olupamo{
-  width: 39em;
-  display: flex;
-  justify-content: center;
-}
-
-.custom-olupamo h1{
-    border-bottom: 10px solid #5DC560;
-    border-top: 10px solid #5DC560;
-    border-radius: 5px;
-    border-width: 5px;
-    padding: 0px 10px;
-    /* width: 390px; */
-
-}
-
-.banner-text p {
-    font-size: 20px;
-    line-height: 1em;
-}
-    
-   
-
-    @media only screen and (max-width: 1278px) {
-
-.banner-text p{
-  font-size: 1.2em;
-  padding-left: 20px;
+.release-dates{
  
 }
+.release-dates p{
+  font-size: 30px; 
+  position: sticky; 
+  top: 0;
+  background-color: white;
+  color:#5DC560 ; 
+  z-index: 1000;
+   /* margin-top: 2em; */
+
+}
+.release-dates h4{
+  color:#5DC560;
+   position: sticky; 
+   top: 2.5em; 
+   background-color: white; 
+   z-index: 1000;
+   font-weight: bold;
+}
+.col-md-1 .release-notes-sidebar{
+  margin-top: -4em;
+  margin-left:-7em; 
+  height: 30em;
+  width: 20em;
+  padding-right: -10px;
 }
 
-@media only screen and (max-width: 1002px) {
+.improved-container ul a:hover{
+  color:yellowgreen;
+}
 
-.banner-text p{
-  font-size: 1em;
-  padding-left: 20px;
- 
+@media only screen and (min-width: 2560px) {
+
+.banner-text{
+  margin-left: 7em;
+}
+
+}
+@media only screen and (max-width: 2530px) {
+
+.banner-text{
+  margin-left: 4em;
+}
+}
+
+@media only screen and (max-width: 1870px) {
+
+.banner-text{
+  margin-left: 3em;
 }
 }
 
 @media only screen and (max-width: 992px) {
 
-.banner-text p{
-  font-size: 1em;
-  padding-left: 20px;
-}
 
-  .custom-olupamo{
-  width: 33em;
-  display: flex;
-  justify-content: center;
+.release-notes-sidebar{
+  display: none;
 }
-
+}
  
 
-.release-dates{
-  margin-top: 5px;
+    @media only screen and (max-width: 720px) {
+
+      .text {
+        font-size: 15px;
+        text-align: center;
+      }
+
+      .popup-h1 {
+        font-size: 20px;
+      }
+
+    }
+
+    @media only screen and (max-width: 700px) {
+
+.banner {
+ display: none;
 }
 }
 
-@media only screen and (max-width: 846px) {
+@media only screen and (max-width: 698px) {
+      .release-days-mb ul {
+        padding-left: 15px;
+      }
+    }
 
-.banner-text p{
-  font-size: 14px;
-
-  line-height: 1.2em;
- 
-}
-}
-
-@media only screen and (max-width: 768px) {
-
-.release-dates{
-  margin-top: -10px;
-}
- 
-}
-@media only screen and (max-width: 720px) {
-
-.text {
-  font-size: 15px;
-  text-align: center;
-}
-
-.popup-h1 {
-  font-size: 20px;
-}
-.row p{
-  margin-left: -2px;
-
-}
-}
 
     @media only screen and (max-width: 520px) {
       .text {
         font-size: 15px;
         text-align: center;
       }
-
-      /* h3 {
-        margin-left: -35px;
-      }
-      .onboarding-span{
-        margin-left: -35px;
-      } */
-
-      .banner{
-        display: none;
     }
-  }
-
-  
   </style>
   <!-- Favicon -->
   <link href="img/fav.png" rel="shortcut icon" type="image/png" />
 
   <!-- Title -->
-  <title>Olupamo user guide </title>
+  <title>Olupamo user guides </title>
 
   <!-- Bootstrap Core CSS -->
   <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -210,7 +216,7 @@
   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   <link href="css2/chat.css" rel="stylesheet">
   <link href="css2/theme.css" rel="stylesheet">
-  <link rel="stylesheet" href="css2/release-notes.css">
+  <link rel="stylesheet" href="css2/release-notes-features.css">
   <link href="css2/green.css" rel="stylesheet" id="style_theme">
   <script src="https://use.fontawesome.com/c64dd3c883.js"></script>
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -313,126 +319,160 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12 release-note-hero-banner">
-          <h1> Olupamo acccounting user guide</h1>
+            <h1> Olupamo Acccounting User Guide</h1>
         </div>
-      </div>
     </div>
-  </section>
-
-
-  <main>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 release-notes-title">
-          <div class="banner">
-            <!-- <img src="./img/getting started with olupamo .png" alt="Placeholder Image" class="banner-image"> -->
-            <div class="banner-text">
-                <div class="custom-olupamo">
-                    <h1><strong>All about Olupamo </strong></h1>
-                </div><br>
-                <p >Olupamo is Nigeria’s number 1 customizable accounting app for schools.<br> It is a user friendly accounting solution tailored to your specific need with<br> inventory management, vendor/supplier management, online payment <br>integration, fee management embedded into the system.</p>
-            </div>
-        </div>
-
-          <h3>Release note features</h3>
-          <span class="onboarding-span" style="position: absolute; width: 7em; height: 4px; background-color:bisque; margin-top: -6px;" ></span>
-        </div>
+</div>
+    <div class="banner-text">
+      <div class="custom-olupamo">
+          <h1><strong>About Olupamo </strong></h1>
       </div>
-    </div><br>
+      <p>Olupamo is Nigeria’s number 1 customizable accounting app for schools. It is a user friendly accounting solution tailored to your specific need with inventory management, vendor/supplier management, online payment integration, fee management embedded into the system.</p>
+    </div>
+</section>
 
-    <section class="release-notes-content" style="--bs-gap:5rem;">
-      <div class="container">
-        <div class="row">
-            <div class="col-md-8"><br><br>
-          
-                <ul><a href="https://eschool.ng/release-notes/v1-release-notes.html" style="font-size: 20px;">Click here to view the latest release notes</a></ul><br>   
-                </ul>
+
+<main>
+
+<section class="release-notes-container">
+    <div class="release-days-mb">
+      <ul  style=" background-color:#f0f1f0;  line-height: 3em; font-size: medium; color: #000 !important;" class="menu">
+        <li><a href="./olupamo-login.html" class="menu-item" id="submenu1">Login</a>         
+        </li></a>
     
-            <!-- release-notes-versioins -->
-            <div>
-            <h4>To join the eSchool community to receive notification about new updates. <br>
-              Send us a mail on <a href="mailto:info@eschool.ng">info@eschool.ng</a> </h4>
+        <li><a href="./olupamo-dashboard.html" class="menu-item" data-target="submenu2">Dashboard</a>
+        </li>
+        <li><a href="./olupamo-finance.html" class="menu-item" data-target="submenu3">Finance</a>
+        </li>
+        <li><a href="./olupamo-fee-management.html" class="menu-item" data-target="submenu4">Fee management</a>
+        </li>
+        <li><a href="./olupamo-inventory.html" class="menu-item" data-target="submenu5">Inventory</a>
+        </li>
+        <li><a href="./olupamo-settings.html" class="menu-item" data-target="submenu6">Settings</a>
+        </li>
+        <li><a href="./olupamo-release-note.html" class="menu-item" data-target="submenu7">Release note</a>
+        </li> 
 
-
-
-            <!-- release-notes-versioins -->
-            <!-- <div> -->
-              <!-- <ul>
-                <li style="margin-bottom: 10px;"><a href="./v1-release-notes.html" target="_blank"
-                    style="text-decoration: underline;">
-                    eSchool Pro-Version 1 release notes
-                  </a></li>
-                <li><a href="./v2-release-notes.html" target="_blank" style="text-decoration: underline;">
-                    eSchool Pro-Version 2 release notes
-                  </a></li>
-              </ul> -->
-            <!-- </div> -->
-
-
-            <!-- <div class="release-notes-v2">
-              <h4>Specific Release Notes</h4>
-              <p>
-              <ul class="release-notes-list">
-                <a href="crown-imperial-release-note.html">
-                  <li>Crown Imeprial Schools</li>
-                </a>
-
-              </ul>
-            </div> -->
-          </div>
-
-
-          <div class="col-md-1"></div>
-
-              <div class="col-md-3 release-notes-sidebar" style="position: relative;">
-                <p>
-                <!-- <h5 style="font-size: 20px;">Key features</h5>
-                
-                </p>
-                <span style="position: absolute;width: 4em; height: 2px; background-color: green; margin-top: -6px;" ></span>
-                <h6 style="margin-top: 18px; font-size: 15px;">Our range of smart accounting <br>features can help you take your <br>school to the next level. </h6>
-                <ul class="release-notes-list" style="line-height: 30px;" >
-                  <li><a href="./olupamo-pages/fee-management.html">Fee management</a></li>
-                  <li><a href="./olupamo-pages/invoice-receipt-management.html">Invoice/reciept management</a></li>
-                  <li><a href="./olupamo-pages/online-payment-integration.html">Online payment integration</a></li>
-                  <li><a href="./olupamo-pages/inventory-management.html">Inventory management</a></li>
-                  <li><a href="./olupamo-pages/vendor-supplier-management.html">Vendor/supplier management</a></li>
-                  <li><a href="./olupamo-pages/expense-income-tracking.html">Expense and income tracking</a></li>
-                  <li><a href="./olupamo-pages/financial-report.html">Financial report</a></li>
-                 -->
-                  <!-- <a href="./v2-release-notes.html" target="_blank">
-                    <li>eSchool Software 2.0 release notes</li>
-                  </a>
-                  <a href=""> 
-                    <li>Specific release Notes</li>
-                  </a> -->
-                <!-- </ul>
-              </div> -->
-        </div>
-      </div>
-    </section>
-  </main>
-
-
-
-
-
-  <!--Ads Section-->
-  <!-- <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
-  <!-- eSchool -->
-  <!-- <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6304218397086014"
-            data-ad-slot="6167971229" data-ad-format="auto" data-full-width-responsive="true"></ins>
-          <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
-
-        </div>
-      </div>
+        <li><a href="./olupamo-safety-policy.html" class="menu-item" data-target="submenu7">Safety and privacy</a>
+        </li> 
+        <li><a href="./olupamo-article.html" class="menu-item" data-target="submenu8">Demo</a>
+        </li> 
+    </ul>   
+    </div>
+    <!-- <div id="release-dates-mb">
+        <h5>View all user guides </h5>
     </div> -->
+    <div class="release-dates">
+      
+      <p><strong >User onboarding</strong></p><br>
+        <h4>Table of contents </h4>
+        <div class="release-month">
+            <ul  style=" background-color:#f0f1f0;  line-height: 3em; font-size: medium; color: #000 !important;" class="menu">
+              <li><a href="./olupamo-login.html" class="menu-item" id="submenu1">Login</a>         
+              </li></a>
+          
+              <li><a href="./olupamo-dashboard.html" class="menu-item" data-target="submenu2">Dashboard</a>
+              </li>
+              <li><a href="./olupamo-finance.html" class="menu-item" data-target="submenu3">Finance</a>
+              </li>
+              <li><a href="./fee-management.html" class="menu-item" data-target="submenu4">Fee management</a>
+              </li>
+              <li><a href="./olupamo-inventory.html" class="menu-item" data-target="submenu5">Inventory</a>
+              </li>
+              <li><a href="./olupamo-settings.html" class="menu-item" data-target="submenu6">Settings</a>
+              </li>
+              <li><a href="./olupamo-release-note.html" class="menu-item" data-target="submenu7">Release note</a>
+              </li> 
 
+              <li><a href="./olupamo-safety-policy.html" class="menu-item" data-target="submenu7">Safety and privacy</a>
+              </li> 
+              <li><a href="./olupamo-article.html" class="menu-item" data-target="submenu8">Demo</a>
+              </li> 
+          </ul>   
+        </div>
+    </div>
+
+    <div class="row-2-wrapper">
+     <div class="release-notes-info">
+        <div class="breadcrumbs">
+            <ol class="breadcrumb">
+              <ol class="breadcrumb">
+                <li><a href="../index.html">Home</a></li>
+                <li class="active">Release-note</li>
+            </ol>
+        </div>
+          <div class="release-notes-title" >
+              <h2> Realese note features</h2>
+          </div>
+          <p class="sub-title">Find below the release note link.</p><br>
+
+          <ul id="submenu6" class="submenu" >
+              <ul><a href="https://eschool.ng/release-notes/v1-release-notes.html" style="font-size: 20px;">Click here to view the latest release notes</a></ul><br>   
+            </ul>
+          </ul>
+        </div><br>
+       
+
+
+        <p>We appreciate your feedback and commitment to improving our application.
+            This update is part of our ongoing efforts to provide a seamless and
+            error-free user experience.</p>
+        <strong>Send us a mail on <a href="mailto: info@eschool.ng"> info@eschool.ng</a></strong>
+      </div>
+       
+
+    </div>
+
+    <div class="col-md-1">
+
+      <div class="col-md-3 release-notes-sidebar">
+        <p>
+        <h5 style="font-size: 20px;">Key features</h5>
+        </p>
+            <span style="position: absolute;width: 15em; height: 2px; background-color: green;"></span>
+            <h6 style="margin-top: 18px; font-size: 15px; line-height: 1.3em;">Our range of smart accounting <br>features can help you take your <br>school to the next level. </h6>
+            <ul class="release-notes-list" style="line-height: 30px;" >
+                  <li><a href="./fee-details.html">Fee management</a></li>
+                  <li><a href="./invoice-reciept-management.html">Invoice/reciept management</a></li>
+                <li><a href="./online-payment-integration.html">Online payment integration</a></li>
+                <li><a href="./inventory-details.html">Inventory management</a></li>
+                <li><a href="./vendor-supplier-management.html">Vendor/supplier management</a></li>
+                <li><a href="./expense-income-tracking.html">Expense and income tracking</a></li>
+                <li><a href="./financial-report.html">Financial report</a></li>
+                      
+            
+              <!-- <a href="./v2-release-notes.html" target="_blank">
+                <li>eSchool Software 2.0 release notes</li>
+              </a>
+              <a href=""> 
+                <li>Specific release Notes</li>
+              </a> -->
+            </ul>
+    </div>
+  </div>
+
+</section>
+</main>
+
+
+
+
+
+<!--Ads Section-->
+<!-- <div class="container">
+<div class="row">
+<div class="col-md-12">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+<!-- eSchool -->
+<!-- <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6304218397086014"
+    data-ad-slot="6167971229" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+
+</div>
+</div>
+</div> -->
 
   <!-- Contact Form + Address-->
   <aside class="theme-bg aside-cta" id="download">

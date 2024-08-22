@@ -43,146 +43,155 @@
     }
 
     .submenu li a:hover {
-			font-size: 1.4em;
-			background-color: bisque;
-			padding: 0.2em;
-			text-decoration: none;
-		}
+     background-color: #f0f1f0;
+     font-size: 30px;
+     text-decoration: none;
+    }
 
 
     .banner {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			/* height: 30vh; */
-			width: 60vw;
-			background-color: white
-		}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 30vh; */
+    width: 60vw;
+    background-color: white 
+    
+    
+}
 
-		.banner-text {
+
+
+.banner-text {
 			display: flex;
-			justify-content: center;
 			flex-direction: column;
-			align-items: center;
 			width: auto;
 			height: auto;
+      margin-left: 2em;
+      margin-top: 1em;
 		}
 
 		.banner-text h1 {
 			margin: 0;
 			font-size: 2em;
-			padding-left: 3px;
+      color: #115e14;
 		}
 
-		.custom-olupamo {
-			display: flex;
-			justify-content: center;
-	}
+		.custom-olupamo > h3 >strong{
+			color:#115e14;
+			font-size: 1.5em;
+      margin-left: -0.8em;
 
-		.custom-olupamo h1 {
-			border-bottom: 10px solid #5DC560;
-			border-top: 10px solid #5DC560;
-			border-radius: 5px;
-			border-width: 5px;
-			padding: 0px 10px;
-			/* width: 390px; */
 
+		}
+
+		.banner-text p {
+			font-size: 1.2em;
+			line-height: 1.5em;
+      margin-left: -2em;
+		}
+
+
+.release-notes-list li{
+	padding: 0.2em;
 }
-
-.banner-text p {
-  font-size: 1.2em;
-	line-height: 1.5em;
-}
-   
-
-    @media only screen and (max-width: 1278px) {
-
-.banner-text p{
-  font-size: 1.2em;
-  padding-left: 20px;
- 
-}
-}
-
-@media only screen and (max-width: 1002px) {
-
-.banner-text p{
-  font-size: 1em;
-  padding-left: 20px;
- 
-}
-}
-
-@media only screen and (max-width: 992px) {
-
-.banner-text p{
-  font-size: 1em;
-  padding-left: 20px;
-}
-
-  .custom-olupamo{
-  width: 33em;
-  display: flex;
-  justify-content: center;
-}
-
- 
-
 .release-dates{
-  margin-top: 5px;
-}
-}
-
-@media only screen and (max-width: 846px) {
-
-.banner-text p{
-  font-size: 14px;
-
-  line-height: 1.2em;
  
 }
-}
-
-@media only screen and (max-width: 768px) {
-
-.release-dates{
-  margin-top: -10px;
-}
- 
-}
-@media only screen and (max-width: 720px) {
-
-.text {
-  font-size: 15px;
-  text-align: center;
-}
-
-.popup-h1 {
-  font-size: 20px;
-}
-.row p{
-  margin-left: -2px;
+.release-dates p{
+  font-size: 30px; 
+  position: sticky; 
+  top: 0;
+  background-color: white;
+  color:#5DC560 ; 
+  z-index: 1000;
+   /* margin-top: 2em; */
 
 }
+.release-dates h4{
+  color:#5DC560;
+   position: sticky; 
+   top: 2.5em; 
+   background-color: white; 
+   z-index: 1000;
+   font-weight: bold;
 }
+.release-notes-sidebar{
+  margin-top: -8em;
+  height: 30em;
+  width: 20em;
+  padding-right: -10px;
+}
+
+.improved-container ul a:hover{
+  color:yellowgreen;
+}
+
+.key-fee-text{
+  margin-left: 1em;
+}
+
+@media only screen and (min-width: 2560px) {
+
+.banner-text{
+  margin-left: 7em;
+}
+
+}
+@media only screen and (max-width: 2530px) {
+
+.banner-text{
+  margin-left: 4em;
+}
+}
+
+@media only screen and (max-width: 1870px) {
+
+.banner-text{
+  margin-left: 3em;
+}
+}
+/* 
+@media only screen and (max-width: 980px) {
+
+ .col-md-1{
+    grid-column: 1/2;
+}
+} */
+
+    @media only screen and (max-width: 720px) {
+
+      .text {
+        font-size: 15px;
+        text-align: center;
+      }
+
+      .popup-h1 {
+        font-size: 20px;
+      }
+
+    }
+
+    @media only screen and (max-width: 700px) {
+
+.banner {
+ display: none;
+}
+}
+
+@media only screen and (max-width: 698px) {
+      .release-days-mb ul {
+        padding-left: 15px;
+      }
+    }
+
 
     @media only screen and (max-width: 520px) {
       .text {
         font-size: 15px;
         text-align: center;
       }
-
-      /* h3 {
-        margin-left: -35px;
-      }
-      .onboarding-span{
-        margin-left: -35px;
-      } */
-
-      .banner{
-        display: none;
     }
-  }
 
   
   </style>
@@ -311,7 +320,7 @@
       <div class="row">
         <div class="col-md-12 release-note-hero-banner">
           <h1> Olupamo Accounting User Guide</h1>
-        </div>
+        </div><br>
       </div>
     </div>
   </section>
@@ -320,20 +329,25 @@
   <main>
     <div class="container">
       <div class="row">
-        <div class="col-md-12 release-notes-title">
-          <div class="banner">
-            <!-- <img src="./img/getting started with olupamo .png" alt="Placeholder Image" class="banner-image"> -->
-            <div class="banner-text">
-                <div class="custom-olupamo">
-                    <h1><strong>All about Olupamo </strong></h1>
-                </div><br>
-                <p >Olupamo is Nigeria’s number 1 customizable accounting app for schools.<br> It is a user friendly accounting solution tailored to your specific need with<br> inventory management, vendor/supplier management, online payment <br>integration, fee management embedded into the system.</p>
+        <!-- <div class="col-md-12 release-notes-title"> -->
+          <div class="banner-text">
+            <div class="custom-olupamo">
+                <h3><strong>About Olupamo </strong></h3>
             </div>
-        </div>
-
-          <h3>Expense income tracking</h3>
+            <p>Olupamo is Nigeria’s number 1 customizable accounting app for schools. It is a user friendly accounting solution tailored to your specific need with inventory management, vendor/supplier management, online payment integration, fee management embedded into the system.</p>
+          </div><br><br>
+        <!-- </div> -->
+        <div class="breadcrumbs">
+          <ol class="breadcrumb">
+            <ol class="breadcrumb">
+              <li><a href="../index.html">Home</a></li>
+              <li class="active">expense-income-tracking</li>
+          </ol>
+      </div><br>
+        <div class="key-fee-text">
+          <h1 style="font-weight: bolder;">Expense and income tracking</h1>
           <span class="onboarding-span"
-          style="position: absolute; width: 22.5em; height: 4px; background-color:bisque;"></span>
+          style="position: absolute; width: 31.5em; height: 4px; background-color:bisque;"></span>
         </div>
       </div>
     </div><br>
@@ -346,12 +360,10 @@
     
                 <div class="community-container">
     
-                  <ul id="submenu8" class="submenu">
-                    <ul>
-                      This feature monitors cash flow by tracking incoming and outgoing funds, ensuring there are sufficient resources to meet obligations. It also  provides a clear and comprehensive view of all income and expenses.
-                    </ul>
-                    
-                </ul>
+                  <p id="submenu8" class="submenu">
+  
+                    This feature monitors cash flow by tracking incoming and outgoing funds, ensuring there are sufficient resources to meet obligations. It also  provides a clear and comprehensive view of all income and expenses.
+                  </p>
                 </div>
     
             <h4>To join the eSchool community to receive notification about new updates. <br>
@@ -393,8 +405,8 @@
                 <h5 style="font-size: 20px;">Key features</h5>
                 
                 </p>
-                <span style="position: absolute;width: 15em; height: 2px; background-color: green;"></span>
-                <h6 style="margin-top: 18px; font-size: 15px;line-height: 1.3em;">Our range of smart accounting features can help you take your school to the next level. </h6>
+                <span style="position: absolute;width: 15em; height: 2px; background-color: green; margin-top: -6px;" ></span>
+                <h6 style="margin-top: 18px; font-size: 15px;">Our range of smart accounting <br>features can help you take your <br>school to the next level. </h6>
                 <ul class="release-notes-list" style="line-height: 30px;" >
                   <li><a href="./fee-details.html">Fee management</a></li>
                   <li><a href="./invoice-reciept-management.html">Invoice/reciept management</a></li>
@@ -403,6 +415,7 @@
                   <li><a href="./vendor-supplier-management.html">Vendor/supplier management</a></li>
                   <li><a href="./expense-income-tracking.html">Expense and income tracking</a></li>
                   <li><a href="./financial-report.html">Financial report</a></li>
+                
                 
                   <!-- <a href="./v2-release-notes.html" target="_blank">
                     <li>eSchool Software 2.0 release notes</li>

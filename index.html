@@ -50,21 +50,9 @@
 			text-decoration: none;
 		}
 
-
-		.banner {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			/* height: 30vh; */
-			width: 60vw;
-			background-color: white
-		}
-
 		.banner-text {
 			display: flex;
-			justify-content: center;
 			flex-direction: column;
-			align-items: center;
 			width: auto;
 			height: auto;
 		}
@@ -72,21 +60,11 @@
 		.banner-text h1 {
 			margin: 0;
 			font-size: 2em;
-			padding-left: 3px;
 		}
 
-		.custom-olupamo {
-			display: flex;
-			justify-content: center;
-		}
-
-		.custom-olupamo h1 {
-			border-bottom: 10px solid #5DC560;
-			border-top: 10px solid #5DC560;
-			border-radius: 5px;
-			border-width: 5px;
-			padding: 0px 10px;
-			/* width: 390px; */
+		.custom-olupamo p strong{
+			color:#115e14;
+			font-size: 1.5em;
 
 		}
 
@@ -105,41 +83,12 @@
 
 			.banner-text p {
 				font-size: 1.2em;
-				padding-left: 20px;
+				/* padding-left: 20px; */
 
 			}
 		}
 
-		@media only screen and (max-width: 1002px) {
-
-			.banner-text p {
-				font-size: 1em;
-				padding-left: 20px;
-
-			}
-		}
-
-		@media only screen and (max-width: 992px) {
-
-			.banner-text p {
-				font-size: 1em;
-				padding-left: 20px;
-			}
-
-			.custom-olupamo {
-				display: flex;
-				justify-content: center;
-			}
-
-
-
-			.release-dates {
-				margin-top: 5px;
-			}
-		}
-
-		/* @media only screen and (max-width: 846px) {
-} */
+	
 
 		@media only screen and (max-width: 768px) {
 
@@ -172,12 +121,6 @@
 				text-align: center;
 			}
 
-			/* h3 {
-        margin-left: -35px;
-      }
-      .onboarding-span{
-        margin-left: -35px;
-      } */
 
 			.banner {
 				display: block;
@@ -334,19 +277,16 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 release-notes-title">
-					<div class="banner">
-						<!-- <img src="./img/getting started with olupamo .png" alt="Placeholder Image" class="banner-image"> -->
-						<div class="banner-text">
-							<div class="custom-olupamo">
-								<h1><strong>All about Olupamo </strong></h1>
-							</div><br>
-							<p>Olupamo is Nigeria’s number 1 customizable accounting app for schools.<br> It is a user
-								friendly accounting solution tailored to your specific need with<br> inventory
-								management, vendor/supplier management, online payment <br>integration, fee management
-								embedded into the system.</p>
-						</div>
-					</div>
 
+					<div class="banner-text">
+						<div class="custom-olupamo">
+							<P><strong>About Olupamo </strong></P>
+						</div>
+						<p>Olupamo is Nigeria’s number 1 customizable accounting app for schools.It is a user
+							friendly accounting solution tailored to your specific need with inventory
+							management, vendor/supplier management, online payment integration, fee management
+							embedded into the system.</p>
+					</div>
 					<h3>User Onboarding</h3>
 					<span class="onboarding-span"
 						style="position: absolute; width: 15em; height: 4px; background-color:bisque;"></span>
@@ -365,7 +305,7 @@
 								<li><a href="./olupamo-pages/olupamo-login.html">✅ Login</a></li><br>
 								<li><a href="./olupamo-pages/olupamo-dashboard.html">✅ Dashboard</a></li><br>
 								<li><a href="./olupamo-pages/olupamo-finance.html">✅ Finance</a></li><br>
-								<li><a href="./olupamo-pages/olupamo-fee-management.html">✅ Fee management</a></li><br>
+								<li><a href="./olupamo-pages/fee-management.html">✅ Fee management</a></li><br>
 								<li><a href="./olupamo-pages/olupamo-inventory.html">✅ Inventory</a></li><br>
 								<li><a href="./olupamo-pages/olupamo-settings.html">✅ Settings</a></li><br>
 								<li><a href="./olupamo-pages/olupamo-release-note.html">✅ Release Note</a></li><br>

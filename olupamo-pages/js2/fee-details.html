@@ -50,52 +50,48 @@
 
 
     .banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* height: 30vh; */
-    width: 60vw;
-    background-color: white 
-    
-    
-}
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			/* height: 30vh; */
+			width: 60vw;
+			background-color: white
+		}
 
+		.banner-text {
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			align-items: center;
+			width: auto;
+			height: auto;
+		}
 
+		.banner-text h1 {
+			margin: 0;
+			font-size: 2em;
+			padding-left: 3px;
+		}
 
- .banner-text {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: auto;
-    height: auto;
-}
+		.custom-olupamo {
+			display: flex;
+			justify-content: center;
+	}
 
-.banner-text h1 {
-    margin: 0;
-    font-size:43px;
-    padding-left: 3px;
-}
-.custom-olupamo{
-  width: 39em;
-  display: flex;
-  justify-content: center;
-}
-
-.custom-olupamo h1{
-    border-bottom: 10px solid #5DC560;
-    border-top: 10px solid #5DC560;
-    border-radius: 5px;
-    border-width: 5px;
-    padding: 0px 10px;
-    /* width: 390px; */
+		.custom-olupamo h1 {
+			border-bottom: 10px solid #5DC560;
+			border-top: 10px solid #5DC560;
+			border-radius: 5px;
+			border-width: 5px;
+			padding: 0px 10px;
+			/* width: 390px; */
 
 }
 
 .banner-text p {
-    font-size: 20px;
-    line-height: 1em;
+  font-size: 1.2em;
+	line-height: 1.5em;
 }
-    
    
 
     @media only screen and (max-width: 1278px) {
@@ -313,7 +309,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12 release-note-hero-banner">
-          <h1> Olupamo acccounting user guide</h1>
+          <h1> Olupamo Accounting User Guide</h1>
         </div>
       </div>
     </div>
@@ -334,8 +330,9 @@
             </div>
         </div>
 
-          <h3>User onboarding</h3>
-          <span class="onboarding-span" style="position: absolute; width: 7em; height: 4px; background-color:bisque; margin-top: -6px;" ></span>
+          <h3>Fee management</h3>
+          <span class="onboarding-span"
+          style="position: absolute; width: 15em; height: 4px; background-color:bisque;"></span>
         </div>
       </div>
     </div><br>
@@ -343,32 +340,27 @@
     <section class="release-notes-content" style="--bs-gap:5rem;">
       <div class="container">
         <div class="row">
-          <div class="col-md-8">
-            <p><strong>Table of contents to absolutely simplify complexity</strong></p>
-
-            <div class="community-container">
-
-              <ul id="submenu5" class="submenu">
-                <li><a href="./olupamo-login.html">✅Login</a></li><br>
-                <li><a href="./olupamo-dashboard.html">✅Dashboard</a></li><br>
-                <li><a href="./olupamo-finance.html">✅Finance</a></li><br>
-                <li><a href="./olupamo-fee-management.html">✅Fee management</a></li><br>
-                <li><a href="./olupamo-inventory.html">✅Inventory</a></li><br>
-                <li><a href="./olupamo-settings.html">✅Settings</a></li><br>
-                <li><a href="./olupamo-release-note.html">✅Release Note</a></li><br>
-                <li><a href="./olupamo-safety-policy.html">✅Safety and privacy</a></li><br>
-                <li><a href="./olupamo-article.html">✅Article</a></li>   
-             
-            </ul>
-            </div>
-
+            <div class="col-md-8">
+                <!-- <p>Olupamo simplifies your tasks, ensuring compliance and enhancing productivity. Dive into our guide to explore how Olupamo can transform your accounting processes and empower your business with real-time financial insights.</p> -->
+    
+                <div class="community-container">
+    
+                  <ul id="submenu8" class="submenu">
+                    <ul>
+                      Our fee management feature automates the process of invoicing and collecting payments, reducing administrative burden and minimizing errors.
+                    </ul>
+                    
+                </ul>
+                </div>
+    
+    
             <h4>To join the eSchool community to receive notification about new updates. <br>
               Send us a mail on <a href="mailto:info@eschool.ng">info@eschool.ng</a> </h4>
 
 
 
             <!-- release-notes-versioins -->
-            <div>
+            <!-- <div> -->
               <!-- <ul>
                 <li style="margin-bottom: 10px;"><a href="./v1-release-notes.html" target="_blank"
                     style="text-decoration: underline;">
@@ -378,7 +370,7 @@
                     eSchool Pro-Version 2 release notes
                   </a></li>
               </ul> -->
-            </div>
+            <!-- </div> -->
 
 
             <!-- <div class="release-notes-v2">
@@ -401,8 +393,8 @@
                 <h5 style="font-size: 20px;">Key features</h5>
                 
                 </p>
-                <span style="position: absolute;width: 4em; height: 2px; background-color: green; margin-top: -6px;" ></span>
-                <h6 style="margin-top: 18px; font-size: 15px;">Our range of smart accounting <br>features can help you take your <br>school to the next level. </h6>
+                <span style="position: absolute;width: 15em; height: 2px; background-color: green;"></span>
+                <h6 style="margin-top: 18px; font-size: 15px;line-height: 1.3em;">Our range of smart accounting features can help you take your school to the next level. </h6>
                 <ul class="release-notes-list" style="line-height: 30px;" >
                   <li><a href="./fee-details.html">Fee management</a></li>
                   <li><a href="./invoice-reciept-management.html">Invoice/reciept management</a></li>
